@@ -3,25 +3,12 @@ import * as animationData from "../public/img/animations/cloud.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 import React from "react";
 
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData["default"],
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-    className: " object-contain lg:p-10",
-    progressiveLoad: true,
-  },
-  renderer: "svg",
-};
+const blob_lottie =
+  "https://assets9.lottiefiles.com/packages/lf20_wax9lqok.json";
+const cloud_lottie =
+  "https://assets3.lottiefiles.com/packages/lf20_ygr1xkdj.json";
 
 export default function Example() {
-  const [width, setWidth] = React.useState(0);
-
-  React.useEffect(() => {
-    setWidth(window.innerWidth >= 700 ? 700 : window.innerWidth);
-  });
-
   return (
     <>
       <Navbar />
@@ -66,10 +53,10 @@ export default function Example() {
               <Player
                 autoplay
                 loop
-                src={animationData.default}
-                style={{ height: "700px", width: width, padding: "3rem" }}
+                src="https://assets3.lottiefiles.com/packages/lf20_ygr1xkdj.json"
+                style={{ height: "700px", width: "700px", padding: "3rem" }}
                 speed={0.5}
-                renderer="svg"
+                //renderer="canvas"
               ></Player>
               {/* <Lottie
                 options={defaultOptions}
