@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar";
-import Lottie from "react-lottie";
 import * as animationData from "../public/img/animations/cloud.json";
+import { Player } from "@lottiefiles/react-lottie-player";
 import React from "react";
 
 const defaultOptions = {
@@ -10,7 +10,9 @@ const defaultOptions = {
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
     className: " object-contain lg:p-10",
+    progressiveLoad: true,
   },
+  renderer: "svg",
 };
 
 export default function Example() {
@@ -29,7 +31,7 @@ export default function Example() {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline ">Give your business a</span>
-                <br />
+                <br className="invisible sm:visible" />
                 <span className="block main-text xl:inline">
                   technology boost
                 </span>
@@ -61,13 +63,21 @@ export default function Example() {
           </div>
           <div className="absolute top-0  right-0 z-50 sm:opacity-100 opacity-20 ">
             <div className="lg:-mt-32">
-              <Lottie
+              <Player
+                autoplay
+                loop
+                src={animationData.default}
+                style={{ height: "700px", width: width, padding: "3rem" }}
+                speed={0.5}
+                renderer="svg"
+              ></Player>
+              {/* <Lottie
                 options={defaultOptions}
                 className="w-full h-full"
                 height={700}
                 width={width}
                 speed={0.7}
-              />
+              /> */}
             </div>
           </div>
         </div>
