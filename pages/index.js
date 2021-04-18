@@ -31,7 +31,7 @@ export default function Example() {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline ">Give your business a</span>
-                <br className="invisible sm:visible" />
+                <br className="hidden sm:inline" />
                 <span className="block main-text xl:inline">
                   technology boost
                 </span>
