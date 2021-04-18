@@ -1,5 +1,4 @@
 import Navbar from "../components/navbar";
-import * as animationData from "../public/img/animations/cloud.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 import React from "react";
 
@@ -12,7 +11,7 @@ export default function Example() {
   return (
     <>
       <Navbar />
-      <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+      <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-26">
         <div className="relative">
           <div className="relative">
             <div className="sm:text-center lg:text-left">
@@ -48,14 +47,20 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="absolute top-0  right-0 z-50 sm:opacity-100 opacity-20 ">
+          <div className="absolute top-0  right-0 z-50 md:opacity-90 opacity-20 ">
             <div className="lg:-mt-32">
               <Player
                 autoplay
                 loop
-                src="https://assets3.lottiefiles.com/packages/lf20_ygr1xkdj.json"
-                style={{ height: "700px", width: "700px", padding: "3rem" }}
-                speed={0.5}
+                src="https://assets9.lottiefiles.com/packages/lf20_wax9lqok.json"
+                style={{
+                  height: "700px",
+                  width: "650px",
+                  padding: "4rem",
+                  paddingTop: "4rem",
+                  paddingRight: "1rem",
+                }}
+                speed={0.7}
                 //renderer="canvas"
               ></Player>
               {/* <Lottie
