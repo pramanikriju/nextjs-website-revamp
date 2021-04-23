@@ -13,31 +13,31 @@ import {
   SupportIcon,
   ViewGridIcon,
   XIcon,
-} from '@heroicons/react/outline'
+} from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const solutions = [
   {
-    name: 'Analytics',
+    name: 'Web Applications',
     description: 'Get a better understanding of where your traffic is coming from.',
     href: '#',
     icon: ChartBarIcon,
   },
   {
-    name: 'Engagement',
+    name: 'Mobile Apps',
     description: 'Speak directly to your customers in a more meaningful way.',
     href: '#',
     icon: CursorClickIcon,
   },
   { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
   {
-    name: 'Integrations',
+    name: 'Graphic Design',
     description: "Connect with third-party tools that you're already using.",
     href: '#',
     icon: ViewGridIcon,
   },
   {
-    name: 'Automations',
+    name: 'DevOps',
     description: 'Build strategic funnels that will drive your customers to convert',
     href: '#',
     icon: RefreshIcon,
@@ -104,7 +104,7 @@ export default function Navbar() {
                       <Popover.Button
                         className={classNames(
                           open ? 'text-gray-900' : 'text-gray-500',
-                          'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                          'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-blue'
                         )}
                       >
                         <span>Solutions</span>
@@ -253,14 +253,13 @@ export default function Navbar() {
                 </Popover>
               </Popover.Group>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                  Sign in
-                </a>
+             
                 <a
                   href="#"
-                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-primary-blue to-primary-green hover:bg-indigo-700"
+                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 
+                   rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-primary-blue to-primary-green hover:bg-indigo-700"
                 >
-                  Sign up
+                  Get in Touch
                 </a>
               </div>
             </div>
@@ -279,17 +278,14 @@ export default function Navbar() {
             <Popover.Panel
               focus
               static
-              className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              className="absolute top-0 inset-x-0 p-2 z-50 transition transform origin-top-right md:hidden"
             >
               <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div className="pt-5 pb-6 px-5">
                   <div className="flex items-center justify-between">
                     <div>
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                        alt="Workflow"
-                      />
+                    <span className="sr-only">Riju Pramanik</span>
+                  <h1 className="text-4xl font-bold main-text">Riju Pramanik</h1>
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
