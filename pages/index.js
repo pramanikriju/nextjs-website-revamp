@@ -2,11 +2,7 @@ import Navbar from "../components/navbar";
 import { Player } from "@lottiefiles/react-lottie-player";
 import React from "react";
 import Head from "next/head";
-
-const blob_lottie =
-  "https://assets9.lottiefiles.com/packages/lf20_wax9lqok.json";
-const cloud_lottie =
-  "https://assets3.lottiefiles.com/packages/lf20_ygr1xkdj.json";
+import animationData from "../public/img/animations/main.json";
 
 export default function Example() {
   return (
@@ -59,7 +55,8 @@ export default function Example() {
               <Player
                 autoplay
                 loop
-                src="https://assets7.lottiefiles.com/packages/lf20_VeqtOe.json"
+                //src="https://assets7.lottiefiles.com/packages/lf20_VeqtOe.json"
+                src={animationData}
                 style={{
                   height: "100%",
                   width: "100%",
