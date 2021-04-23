@@ -91,8 +91,8 @@ export default function Example() {
       </Head>
       <Navbar />
       <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-26">
-        <div className="relative">
-          <div className="relative">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline ">Give your business a</span>
@@ -126,21 +126,18 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="absolute top-0  right-0  md:opacity-90 opacity-20 ">
-            <div className="lg:-mt-32">
+          <div className="">
+            <div className="md:-mt-10">
               <Player
                 autoplay
                 loop
-                src="https://assets9.lottiefiles.com/packages/lf20_wax9lqok.json"
+                src="https://assets7.lottiefiles.com/packages/lf20_VeqtOe.json"
                 style={{
-                  height: "700px",
-                  width: "650px",
-                  padding: "4rem",
-                  paddingTop: "4rem",
-                  paddingRight: "1rem",
+                  height: "100%",
+                  width: "100%",
                 }}
                 className="z-0"
-                speed={0.7}
+                speed={1}
                 //renderer="canvas"
               ></Player>
               {/* <Lottie
