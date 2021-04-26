@@ -1,4 +1,7 @@
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+
+import Card from "../components/technologies/card";
 import { Player } from "@lottiefiles/react-lottie-player";
 import React from "react";
 import Head from "next/head";
@@ -75,7 +78,13 @@ export default function Example() {
             </div>
           </div>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-8">
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </main>
+      <Footer />
     </>
   );
 }

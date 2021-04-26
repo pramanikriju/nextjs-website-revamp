@@ -13,6 +13,12 @@ import {
   SupportIcon,
   ViewGridIcon,
   XIcon,
+  //Navbar Icons
+  DeviceMobileIcon,
+  GlobeAltIcon,
+  PresentationChartLineIcon,
+  ServerIcon
+
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
@@ -21,26 +27,25 @@ const solutions = [
     name: 'Web Applications',
     description: 'Get a better understanding of where your traffic is coming from.',
     href: '#',
-    icon: ChartBarIcon,
+    icon: GlobeAltIcon,
   },
   {
     name: 'Mobile Apps',
     description: 'Speak directly to your customers in a more meaningful way.',
     href: '#',
-    icon: CursorClickIcon,
+    icon: DeviceMobileIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
   {
     name: 'Graphic Design',
     description: "Connect with third-party tools that you're already using.",
     href: '#',
-    icon: ViewGridIcon,
+    icon: PresentationChartLineIcon,
   },
   {
     name: 'DevOps',
     description: 'Build strategic funnels that will drive your customers to convert',
     href: '#',
-    icon: RefreshIcon,
+    icon: ServerIcon,
   },
 ]
 const callsToAction = [
@@ -83,12 +88,12 @@ export default function Navbar() {
     <Popover className="relative bg-none">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 z-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 z-50 sticky top-0">
             <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
                   <span className="sr-only">Riju Pramanik</span>
-                  <h1 className="text-4xl font-bold main-text">Riju P.</h1>
+                  <h1 className="text-4xl font-bold main-text">Riju Pramanik</h1>
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
