@@ -86,7 +86,7 @@ export default function Example() {
           <div className="bg-gradient-to-b from-gray-100 ">
             <img
               className="md:w-48 md:h-48 rounded-full mx-auto md:-mt-24 w-32 h-32 -mt-16 border-4 border-primary-blue"
-              src="https://picsum.photos/300"
+              src="/img/me2.jpeg"
               alt=""
             />
             <p className="text-center text-2xl mt-5">
@@ -109,10 +109,12 @@ export default function Example() {
           </div>
         </div>
         <div className="w-full">
-          <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-8 md:mt-10 ">
-            <Card />
-            <Card />
-            <Card />
+          <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-26">
+            <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-8 md:mt-10 ">
+              <Card />
+              <Card />
+              <Card />
+            </div>
           </div>
         </div>
       </div>
