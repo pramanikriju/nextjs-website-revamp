@@ -11,6 +11,10 @@ body {
   font-family: Hind, "Open Sans", Helvetica, Arial, sans-serif;
 }
 
+.main-font {
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
 .main-text {
   background: #36d1dc; /* fallback for old browsers */
   background: -webkit-linear-gradient(

@@ -21,8 +21,10 @@ export default function Example() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline ">Give your business a</span>
+              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl">
+                <span className="block main-font xl:inline ">
+                  Give your business a
+                </span>
                 <br className="hidden sm:inline" />
                 <span className="block main-text xl:inline">
                   technology boost
@@ -78,12 +80,43 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-8">
-          <Card />
-          <Card />
-          <Card />
-        </div>
       </main>
+      <div className="mt-24 lg:mt-10">
+        <div className="grid grid-cols-1 place-content-center gap-8 ">
+          <div className="bg-gradient-to-b from-gray-100 ">
+            <img
+              className="md:w-48 md:h-48 rounded-full mx-auto md:-mt-24 w-32 h-32 -mt-16 border-4 border-primary-blue"
+              src="https://picsum.photos/300"
+              alt=""
+            />
+            <p className="text-center text-2xl mt-5">
+              I'm Riju Pramanik. I help design and develop rich digital
+              experiences.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-8 md:mt-10 ">
+              <div className="text-center">Backend Technologies</div>
+              <div className="text-center">
+                Frontend Technologies
+                <div className="grid grid-cols-1 md:grid-cols-2 place-content-center ">
+                  <img
+                    className="grayscale hover:grayscale-0"
+                    src="https://tailwindcss.com/_next/static/media/tailwindcss-logotype.128b6e12eb85d013bc9f80a917f57efe.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-8 md:mt-10 ">
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </>
   );
