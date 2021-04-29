@@ -40,7 +40,7 @@ export default function Example() {
                 <div className="rounded-md shadow">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-blue-700 hover:bg-primary-blue-900 md:py-4 md:text-lg md:px-10"
                   >
                     Get started
                   </a>
@@ -84,13 +84,13 @@ export default function Example() {
       </main>
       <div className="mt-24 lg:mt-10">
         <div className="grid grid-cols-1 place-content-center gap-8 ">
-          <div className="bg-gradient-to-b from-gray-100 place-content-center border-t-4 border-primary-green	">
+          <div className="bg-gradient-to-b from-gray-100 place-content-center border-t-4 border-primary-blue	">
             <div className="block max-w-48 md:w-48 md:h-48 rounded-full  mx-auto md:-mt-24 w-48 h-48 -mt-24 border-4 border-primary-blue">
               <Image
                 className="block max-w-48 md:w-48 md:h-48 rounded-full mx-auto md:-mt-24 w-32 h-32 -mt-16 "
-                src="/img/me2.jpeg"
-                width={1}
-                height={1}
+                src="/img/me.webp"
+                width={48}
+                height={48}
                 layout="responsive"
                 priority={true}
               />
@@ -100,23 +100,51 @@ export default function Example() {
               I'm Riju Pramanik. I help design and develop rich digital
               experiences.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-8 md:mt-10 ">
-              <div className="text-center">Backend Technologies</div>
-              <div className="text-center">
-                Frontend Technologies
-                <div className="grid grid-cols-1 md:grid-cols-2 place-content-center ">
-                  <img
-                    className="grayscale hover:grayscale-0"
-                    src="https://tailwindcss.com/_next/static/media/tailwindcss-logotype.128b6e12eb85d013bc9f80a917f57efe.svg"
-                    alt=""
-                  />
+            <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16  lg:px-8 xl:mt-26">
+              <div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-8 md:mt-10 ">
+                <div className="text-center">Backend Technologies</div>
+                <div className="text-center">
+                  <strong>Frontend Technologies</strong>
+                  <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-5 ">
+                    <div className="filter grayscale hover:grayscale-0 my-auto">
+                      <Image
+                        className=""
+                        src="/img/tech/tailwind.svg"
+                        alt=""
+                        width={3}
+                        height={1}
+                        layout="responsive"
+                      />
+                    </div>
+                    <div className="filter grayscale hover:grayscale-0 my-auto">
+                      <Image
+                        className=""
+                        src="/img/tech/react.png"
+                        alt=""
+                        width={3}
+                        height={1}
+                        layout="responsive"
+                      />
+                    </div>
+                    <div className="filter grayscale hover:grayscale-0 my-auto">
+                      <Image
+                        color="7952b3"
+                        className=""
+                        src="/img/tech/bootstrap-logo.svg"
+                        alt=""
+                        width={512}
+                        height={408}
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="w-full">
-          <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-26">
+          <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6  lg:px-8 ">
             <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-8 md:mt-10 ">
               <Card />
               <Card />
