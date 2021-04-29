@@ -6,10 +6,13 @@ export default function Footer(){
             <div className="grid grid-cols-1 md:grid-cols-4 place-content-center gap-8">
                 <div>
                 <h1 className="text-4xl font-bold main-text">Riju Pramanik</h1>
+                <p className="md:mt-10">
+                    &copy; 2021 All Rights Reserved
+                </p>
                 </div>
                 <div>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                        <li>Designed with ❤ using NextJS and Tailwind.</li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
                     </ul>
                 </div>

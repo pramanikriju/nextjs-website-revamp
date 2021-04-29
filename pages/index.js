@@ -6,6 +6,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import React from "react";
 import Head from "next/head";
 import animationData from "../public/img/animations/main.json";
+import Image from "next/image";
 
 export default function Example() {
   return (
@@ -17,7 +18,7 @@ export default function Example() {
         <meta name="theme-color" content="#5b86e5" />
       </Head>
       <Navbar />
-      <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-26">
+      <main className="mt-6 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-26">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="">
             <div className="sm:text-center lg:text-left">
@@ -83,12 +84,18 @@ export default function Example() {
       </main>
       <div className="mt-24 lg:mt-10">
         <div className="grid grid-cols-1 place-content-center gap-8 ">
-          <div className="bg-gradient-to-b from-gray-100 ">
-            <img
-              className="md:w-48 md:h-48 rounded-full mx-auto md:-mt-24 w-32 h-32 -mt-16 border-4 border-primary-blue"
-              src="/img/me2.jpeg"
-              alt=""
-            />
+          <div className="bg-gradient-to-b from-gray-100 place-content-center border-t-4 border-primary-green	">
+            <div className="block max-w-48 md:w-48 md:h-48 rounded-full  mx-auto md:-mt-24 w-48 h-48 -mt-24 border-4 border-primary-blue">
+              <Image
+                className="block max-w-48 md:w-48 md:h-48 rounded-full mx-auto md:-mt-24 w-32 h-32 -mt-16 "
+                src="/img/me2.jpeg"
+                width={1}
+                height={1}
+                layout="responsive"
+                priority={true}
+              />
+            </div>
+
             <p className="text-center text-2xl mt-5">
               I'm Riju Pramanik. I help design and develop rich digital
               experiences.
