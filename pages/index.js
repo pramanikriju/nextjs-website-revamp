@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Carousel from "../components/carousel";
 
 import Card from "../components/technologies/card";
 import CardAlt from "../components/technologies/card-alt";
@@ -104,7 +105,6 @@ export default function Example() {
             <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16  lg:px-8 xl:mt-26">
               <div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-8 md:mt-10 ">
                 <div className="text-center">
-                  <strong className="mb-32">Backend Technologies</strong>
                   <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-5 ">
                     <div className="filter grayscale hover:grayscale-0 my-auto">
                       <Image
@@ -139,7 +139,6 @@ export default function Example() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <strong>Frontend Technologies</strong>
                   <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-5 ">
                     <div className="filter grayscale hover:grayscale-0 ">
                       <div className="my-auto">
@@ -199,6 +198,7 @@ export default function Example() {
               <CardAlt />
               <CardAlt />
             </div>
+            <Carousel />
           </div>
         </div>
       </div>
