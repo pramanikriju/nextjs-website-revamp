@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
 import Card from "../components/technologies/card";
+import CardAlt from "../components/technologies/card-alt";
 import { Player } from "@lottiefiles/react-lottie-player";
 import React from "react";
 import Head from "next/head";
@@ -102,16 +103,25 @@ export default function Example() {
             </p>
             <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16  lg:px-8 xl:mt-26">
               <div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-8 md:mt-10 ">
-                <div className="text-center">Backend Technologies</div>
                 <div className="text-center">
-                  <strong>Frontend Technologies</strong>
+                  <strong className="mb-32">Backend Technologies</strong>
                   <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-5 ">
                     <div className="filter grayscale hover:grayscale-0 my-auto">
                       <Image
                         className=""
-                        src="/img/tech/tailwind.svg"
+                        src="/img/tech/laravel.png"
                         alt=""
-                        width={3}
+                        width={17}
+                        height={5}
+                        layout="responsive"
+                      />
+                    </div>
+                    <div className="filter grayscale hover:grayscale-0 my-auto">
+                      <Image
+                        className=""
+                        src="/img/tech/nodejs.png"
+                        alt=""
+                        width={3.7}
                         height={1}
                         layout="responsive"
                       />
@@ -119,23 +129,59 @@ export default function Example() {
                     <div className="filter grayscale hover:grayscale-0 my-auto">
                       <Image
                         className=""
-                        src="/img/tech/react.png"
+                        src="/img/tech/wordpress.png"
                         alt=""
-                        width={3}
+                        width={4.4}
                         height={1}
                         layout="responsive"
                       />
                     </div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <strong>Frontend Technologies</strong>
+                  <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-5 ">
+                    <div className="filter grayscale hover:grayscale-0 ">
+                      <div className="my-auto">
+                        <Image
+                          className=""
+                          src="/img/tech/tailwind.svg"
+                          alt=""
+                          width={3}
+                          height={1}
+                          layout="responsive"
+                        />
+                      </div>
+                    </div>
                     <div className="filter grayscale hover:grayscale-0 my-auto">
-                      <Image
-                        color="7952b3"
-                        className=""
-                        src="/img/tech/bootstrap-logo.svg"
-                        alt=""
-                        width={512}
-                        height={408}
-                        layout="responsive"
-                      />
+                      <div className="inline-flex place-content-center">
+                        <img
+                          className="flex-1 md:max-h-10 max-h-16"
+                          src="/img/tech/react.svg"
+                          alt=""
+                        />
+                        <p
+                          style={{ color: "#61dafb" }}
+                          className="text-3xl flex-1 my-auto ml-1"
+                        >
+                          ReactJS
+                        </p>
+                      </div>
+                    </div>
+                    <div className="filter grayscale hover:grayscale-0 my-auto">
+                      <div className="inline-flex place-content-center">
+                        <img
+                          className="flex-1 md:max-h-10 max-h-16"
+                          src="/img/tech/bootstrap.svg"
+                          alt=""
+                        />
+                        <p
+                          style={{ color: "#7952b3" }}
+                          className="text-3xl flex-1 my-auto ml-1"
+                        >
+                          Bootstrap
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -149,6 +195,9 @@ export default function Example() {
               <Card />
               <Card />
               <Card />
+              <CardAlt />
+              <CardAlt />
+              <CardAlt />
             </div>
           </div>
         </div>
