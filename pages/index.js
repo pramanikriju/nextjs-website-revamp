@@ -103,84 +103,78 @@ export default function Example() {
               experiences.
             </p>
             <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16  lg:px-8 xl:mt-26">
-              <div className="grid grid-cols-1 md:grid-cols-2 place-content-center gap-8 md:mt-10 ">
-                <div className="text-center">
-                  <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-5 ">
-                    <div className="filter grayscale hover:grayscale-0 my-auto">
+              <div className="text-center">
+                <div className="grid grid-cols-1 md:grid-cols-6 place-content-center gap-5 ">
+                  <div className="filter grayscale hover:grayscale-0 my-auto">
+                    <Image
+                      className=""
+                      src="/img/tech/laravel.png"
+                      alt=""
+                      width={17}
+                      height={5}
+                      layout="responsive"
+                    />
+                  </div>
+                  <div className="filter grayscale hover:grayscale-0 my-auto order-first md:order-2">
+                    <Image
+                      className=""
+                      src="/img/tech/nodejs.png"
+                      alt=""
+                      width={4}
+                      height={2.5}
+                      layout="responsive"
+                    />
+                  </div>
+                  <div className="filter grayscale hover:grayscale-0 my-auto">
+                    <Image
+                      className=""
+                      src="/img/tech/wordpress.png"
+                      alt=""
+                      width={4.4}
+                      height={1}
+                      layout="responsive"
+                    />
+                  </div>
+                  <div className="filter grayscale hover:grayscale-0 my-auto">
+                    <div className="my-auto">
                       <Image
                         className=""
-                        src="/img/tech/laravel.png"
+                        src="/img/tech/tailwind.svg"
                         alt=""
-                        width={17}
-                        height={5}
-                        layout="responsive"
-                      />
-                    </div>
-                    <div className="filter grayscale hover:grayscale-0 my-auto">
-                      <Image
-                        className=""
-                        src="/img/tech/nodejs.png"
-                        alt=""
-                        width={3.7}
-                        height={1}
-                        layout="responsive"
-                      />
-                    </div>
-                    <div className="filter grayscale hover:grayscale-0 my-auto">
-                      <Image
-                        className=""
-                        src="/img/tech/wordpress.png"
-                        alt=""
-                        width={4.4}
+                        width={3}
                         height={1}
                         layout="responsive"
                       />
                     </div>
                   </div>
-                </div>
-                <div className="text-center">
-                  <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-5 ">
-                    <div className="filter grayscale hover:grayscale-0 ">
-                      <div className="my-auto">
-                        <Image
-                          className=""
-                          src="/img/tech/tailwind.svg"
-                          alt=""
-                          width={3}
-                          height={1}
-                          layout="responsive"
-                        />
-                      </div>
+                  <div className="filter grayscale hover:grayscale-0 my-auto">
+                    <div className="inline-flex place-content-center m-auto">
+                      <img
+                        className="flex-1 md:max-h-10 max-h-16"
+                        src="/img/tech/react.svg"
+                        alt=""
+                      />
+                      <p
+                        style={{ color: "#61dafb" }}
+                        className="text-4xl flex-1 my-auto ml-1"
+                      >
+                        ReactJS
+                      </p>
                     </div>
-                    <div className="filter grayscale hover:grayscale-0 my-auto">
-                      <div className="inline-flex place-content-center">
-                        <img
-                          className="flex-1 md:max-h-10 max-h-16"
-                          src="/img/tech/react.svg"
-                          alt=""
-                        />
-                        <p
-                          style={{ color: "#61dafb" }}
-                          className="text-3xl flex-1 my-auto ml-1"
-                        >
-                          ReactJS
-                        </p>
-                      </div>
-                    </div>
-                    <div className="filter grayscale hover:grayscale-0 my-auto">
-                      <div className="inline-flex place-content-center">
-                        <img
-                          className="flex-1 md:max-h-10 max-h-16"
-                          src="/img/tech/bootstrap.svg"
-                          alt=""
-                        />
-                        <p
-                          style={{ color: "#7952b3" }}
-                          className="text-3xl flex-1 my-auto ml-1"
-                        >
-                          Bootstrap
-                        </p>
-                      </div>
+                  </div>
+                  <div className="filter grayscale hover:grayscale-0 my-auto">
+                    <div className="inline-flex place-content-center">
+                      <img
+                        className="flex-1 md:max-h-10 max-h-16"
+                        src="/img/tech/bootstrap.svg"
+                        alt=""
+                      />
+                      <p
+                        style={{ color: "#7952b3" }}
+                        className="text-3xl flex-1 my-auto ml-1"
+                      >
+                        Bootstrap
+                      </p>
                     </div>
                   </div>
                 </div>
