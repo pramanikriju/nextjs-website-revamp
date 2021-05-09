@@ -1,16 +1,24 @@
 import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import Carousel from "../components/carousel";
+import dynamic from "next/dynamic";
+import Spinner from "../components/spinner";
 
+const Footer = dynamic(() => import("../components/footer"), {
+  loading: () => <Spinner />,
+});
+const Carousel = dynamic(() => import("../components/carousel"), {
+  loading: () => <Spinner />,
+});
 import Card from "../components/technologies/card";
 import CardAlt from "../components/technologies/card-alt";
 import { Player } from "@lottiefiles/react-lottie-player";
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import animationData from "../public/img/animations/main.json";
+
 import Image from "next/image";
 
 export default function Example() {
+  const [loading, setLoading] = useState(false);
   return (
     <>
       <Head>
@@ -52,7 +60,7 @@ export default function Example() {
                     href="#"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
-                    Live demo
+                    Book a session
                   </a>
                 </div>
               </div>
@@ -102,7 +110,7 @@ export default function Example() {
               I'm Riju Pramanik. I help design and develop rich digital
               experiences.
             </p>
-            <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16  lg:px-8 xl:mt-26">
+            <div className="mt-10  mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-10  lg:px-8 xl:mt-26">
               <div className="text-center">
                 <div className="grid grid-cols-1 md:grid-cols-6 place-content-center gap-5 ">
                   <div className="filter grayscale hover:grayscale-0 my-auto">
@@ -115,7 +123,7 @@ export default function Example() {
                       layout="responsive"
                     />
                   </div>
-                  <div className="filter grayscale hover:grayscale-0 my-auto order-first md:order-2">
+                  <div className="filter grayscale hover:grayscale-0 my-auto order-first md:order-2 hidden">
                     <Image
                       className=""
                       src="/img/tech/nodejs.png"
@@ -193,6 +201,27 @@ export default function Example() {
               <CardAlt />
             </div>
             <Carousel />
+          </div>
+        </div>
+        <div className="w-full my-5">
+          <div className=" text-white bg-gradient-to-r from-primary-blue to-primary-green">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-12  py-10">
+              <div className="text-center md:text-right">
+                <div className="text-3xl">Subscribe to my newsletter</div>
+                <div className="text-grey-400">No spam. Promise.</div>
+              </div>
+              <div className="my-auto">
+                <div className="mb-4 text-center md:text-left">
+                  <input
+                    className="shadow text-primary-blue outline-none appearance-none  focus:ring-2 focus:ring-blue-600 rounded py-3 px-3 "
+                    placeholder="john@example.com"
+                  />
+                  <button className="bg-primary-blue-800 ml-4 py-2 px-2 outline-none border-none rounded text-white">
+                    Subscribe {loading && <Spinner />}
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ const Carousel = () => {
 
   return (
     <div>
-        Test
+        {/* Test */}
     </div>
   );
 };
