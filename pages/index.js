@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar";
 import dynamic from "next/dynamic";
 import Spinner from "../components/spinner";
+import Icon from "../components/landing";
 
 const Footer = dynamic(() => import("../components/footer"), {
   loading: () => <Spinner />,
@@ -10,10 +11,8 @@ const Carousel = dynamic(() => import("../components/carousel"), {
 });
 import Card from "../components/technologies/card";
 import CardAlt from "../components/technologies/card-alt";
-import { Player } from "@lottiefiles/react-lottie-player";
 import React, { useState } from "react";
 import Head from "next/head";
-import animationData from "../public/img/animations/main.json";
 
 import Image from "next/image";
 
@@ -28,8 +27,8 @@ export default function Example() {
         <meta name="theme-color" content="#5b86e5" />
       </Head>
       <Navbar />
-      <main className="mt-6 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-26">
-        <div className="grid grid-cols-1 md:grid-cols-2">
+      <main className="mt-6 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:my-24 lg:px-8 xl:mt-26 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl">
@@ -66,29 +65,8 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="">
-            <div className="md:-mt-10">
-              <Player
-                autoplay
-                loop
-                //src="https://assets7.lottiefiles.com/packages/lf20_VeqtOe.json"
-                src={animationData}
-                style={{
-                  height: "100%",
-                  width: "100%",
-                }}
-                className="z-0"
-                speed={1}
-                //renderer="canvas"
-              ></Player>
-              {/* <Lottie
-                options={defaultOptions}
-                className="w-full h-full"
-                height={700}
-                width={width}
-                speed={0.7}
-              /> */}
-            </div>
+          <div className="mt:10 md:-mt-10 mb:16 pb:20">
+            <Icon className="p-32 w-full h-auto" />
           </div>
         </div>
       </main>
@@ -123,7 +101,7 @@ export default function Example() {
                       layout="responsive"
                     />
                   </div>
-                  <div className="filter grayscale hover:grayscale-0 my-auto order-first md:order-2 hidden">
+                  <div className="filter grayscale hover:grayscale-0 my-auto order-first md:order-2 md:block hidden">
                     <Image
                       className=""
                       src="/img/tech/nodejs.png"
