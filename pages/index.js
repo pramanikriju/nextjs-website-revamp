@@ -28,7 +28,7 @@ export default function Example() {
       </Head>
       <Navbar />
       <main className="mt-6 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:my-24 lg:px-8 xl:mt-26 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pb-10">
           <div className="">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl">
@@ -70,7 +70,7 @@ export default function Example() {
           </div>
         </div>
       </main>
-      <div className="mt-24 lg:mt-10">
+      <div className="mt-28 md:mt-16">
         <div className="grid grid-cols-1 place-content-center gap-8 ">
           <div className="bg-gradient-to-b from-gray-100 place-content-center border-t-4 border-primary-blue	">
             <div className="block max-w-48 md:w-48 md:h-48 rounded-full  mx-auto md:-mt-24 w-48 h-48 -mt-24 border-4 border-primary-blue">
@@ -88,7 +88,7 @@ export default function Example() {
               I'm Riju Pramanik. I help design and develop rich digital
               experiences.
             </p>
-            <div className="mt-10  mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-10  lg:px-8 xl:mt-26">
+            <div className="mt-10  mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-5  lg:px-8 xl:mt-26">
               <div className="text-center">
                 <div className="grid grid-cols-1 md:grid-cols-6 place-content-center gap-5 ">
                   <div className="filter grayscale hover:grayscale-0 my-auto">
@@ -181,8 +181,8 @@ export default function Example() {
             <Carousel />
           </div>
         </div>
-        <div className="w-full my-5">
-          <div className=" text-white bg-gradient-to-r from-primary-blue to-primary-green">
+        <div className="w-full my-5 ">
+          <div className=" text-white  py-5 md:py-16 bg-gradient-to-r from-primary-blue to-primary-green">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-12  py-10">
               <div className="text-center md:text-right">
                 <div className="text-3xl">Subscribe to my newsletter</div>
