@@ -94,12 +94,14 @@ function Icon() {
         to: [
           { translateX: 0, translateY: 0},
            { translateX: -10, translateY: 0},
-            { translateX: -10, translateY: -10},
+            { translateX: 0, translateY: 0},
             { translateX: 0, translateY: -10},
             { translateX: 0, translateY: 0},
-            { translateX : 20, translateY: 0 },
+            { translateX : 10, translateY: 0 },
+            { translateX: 0, translateY: 0},
+            { translateX: 0, translateY: 10},
           ],
-        from: { translateX : 20, translateY: 0 },
+        from: { translateX : 0, translateY: 10 },
         //delay: 200,
         loop:true,
         config : { mass: 1, tension: 120, friction: 14 }

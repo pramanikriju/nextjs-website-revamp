@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import dynamic from "next/dynamic";
 import Spinner from "../components/spinner";
 import Icon from "../components/landing";
+import { MailIcon, RefreshIcon } from "@heroicons/react/solid";
 
 const Footer = dynamic(() => import("../components/footer"), {
   loading: () => <Spinner />,
@@ -194,8 +195,9 @@ export default function Example() {
                     className="shadow text-primary-blue outline-none appearance-none  focus:ring-2 focus:ring-blue-600 rounded py-3 px-3 "
                     placeholder="john@example.com"
                   />
-                  <button className="bg-primary-blue-800 ml-4 py-2 px-2 outline-none border-none rounded text-white">
-                    Subscribe {loading && <Spinner />}
+                  <button className="bg-primary-blue-800 ml-4 p-3  outline-none border-none rounded text-white">
+                    <MailIcon className="w-5 h-5 inline " /> Subscribe
+                    {loading && <Spinner />}
                   </button>
                 </div>
               </div>
