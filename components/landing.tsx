@@ -1,6 +1,6 @@
 import React,   { useState }  from "react";
 
-import { useSpring,useSprings, animated } from 'react-spring'
+import { useSpring, useTrail, animated } from 'react-spring'
 
 
 function Icon() {
@@ -33,21 +33,19 @@ function Icon() {
   ></path>
     ];
 
-    const springs = useSprings(
+    const springs = useTrail(
         boxes.length,
-        boxes.map((_, i) => {
-          return {
-            config: { frequency: 1 ,  mass : 2},
-            to: { rotateY: 10},
-            from: { rotateY : -15 },
-            // as we map over the envelopes, increase the delay
-            // first envelope -> delay: 0ms
-            // second envelope -> delay: 100ms
-            // etc.
-            delay: i * 100,
-            loop: true,
-          };
-        })
+        {
+          config: { frequency: 0.6 ,  mass : 1},
+          to: {  rotateX: 10 },
+          from: {  rotateX: -10, },
+          // as we map over the envelopes, increase the delay
+          // first envelope -> delay: 0ms
+          // second envelope -> delay: 100ms
+          // etc.
+          //delay:  100,
+          loop: { reverse: true }
+        }
       );
     
       const animatedEnvelopes = springs.map((animatedStyle, index) => (
@@ -62,17 +60,49 @@ function Icon() {
       ));
 
     const fade = useSpring({
-        to: { opacity: 1 },
-        from: { opacity: 0.7 },
-        reset: true,
+        to: { opacity: 1 , translateX : 0},
+        from: { opacity: 0.7, translateX: 50 },
+        config: { frequency: 0.6 ,  mass : 1},
+        //reset: true,
+        //delay: 500,
+      });
+
+      const spin = useSpring({
+        to: { scale : 1.1},
+        from: { rotate3d : 1 },
+        //reset: true,
+        loop: true,
       });
 
       const bottomFade = useSpring({
-        to: { opacity: 1 ,
-            translateY: 0},
-        from: { opacity: 0.8,
-            translateY : 30 },
+        to: {  scale:1 },
+        from: {  scale : 0.8 },
         delay: 200,
+        loop:false,
+        config : { mass: 2, tension:120, friction: 12, frequency: 1 }
+      });
+
+      const leftFade = useSpring({
+        to: { translateX: 0},
+        from: { translateX : 200 },
+        //delay: 200,
+        //loop:true,
+        config : { mass: 1, tension: 120, friction: 14 }
+      });
+
+      const boxMove = useSpring({
+        to: [
+          { translateX: 0, translateY: 0},
+           { translateX: -10, translateY: 0},
+            { translateX: -10, translateY: -10},
+            { translateX: 0, translateY: -10},
+            { translateX: 0, translateY: 0},
+            { translateX : 20, translateY: 0 },
+          ],
+        from: { translateX : 20, translateY: 0 },
+        //delay: 200,
+        loop:true,
+        config : { mass: 1, tension: 120, friction: 14 }
       });
      
 
@@ -134,12 +164,14 @@ function Icon() {
       {animatedEnvelopes}
       </g>
 
-
-
-      <path
-        fill="#5b86e5"
-        d="M692.742 138.99H750V196.24800000000002H692.742z"
-      ></path>
+      {/* d="M692.742 138.99H750V196.24800000000002H692.742z" */}
+      <animated.g style={boxMove}>
+        <path
+          fill="#5b86e5"
+          d="M692.742 138.99H750V196.24800000000002H692.742z"
+        ></path>
+      </animated.g>
+     
       <path
         fill="#a0616a"
         d="M504.454 480.943l-.74 1.482-2.224-11.117s-2.965-11.858 2.964-11.858 4.447 11.858 4.447 11.858v8.153zM601.696 479.425l.74 1.483 2.224-11.117s2.965-11.859-2.964-11.859-4.447 11.859-4.447 11.859v8.152z"
@@ -231,13 +263,14 @@ function Icon() {
         fill="#2f2e41"
         d="M192.662 300.322L196.469 300.322 202.656 333.635 202.656 362.665 195.042 361.237 188.855 317.454 192.662 300.322z"
       ></path>
-      <animated.g id="holding-box" style={bottomFade}>
       <path fill="#5b86e5" d="M3.535 370.772H143.856V468.283H3.535z"></path>
-      <path
-        fill="#fff"
-        d="M228.545 595.148a29.729 29.729 0 1029.729 29.73 29.816 29.816 0 00-29.73-29.73zm0 8.919a8.919 8.919 0 11-8.92 8.919 8.949 8.949 0 018.92-8.919zm0 42.936a21.657 21.657 0 01-17.838-9.52c.143-5.945 11.892-9.218 17.838-9.218s17.694 3.273 17.837 9.219a21.693 21.693 0 01-17.837 9.519z"
-        transform="translate(-154.85 -205.35)"
-      ></path>
+
+      <animated.g id="holding-box" style={bottomFade}>
+        <path
+          fill="#fff"
+          d="M228.545 595.148a29.729 29.729 0 1029.729 29.73 29.816 29.816 0 00-29.73-29.73zm0 8.919a8.919 8.919 0 11-8.92 8.919 8.949 8.949 0 018.92-8.919zm0 42.936a21.657 21.657 0 01-17.838-9.52c.143-5.945 11.892-9.218 17.838-9.218s17.694 3.273 17.837 9.219a21.693 21.693 0 01-17.837 9.519z"
+          transform="translate(-154.85 -205.35)"
+        ></path>
       </animated.g>
      
       <path
