@@ -62,33 +62,20 @@ function Icon() {
     const fade = useSpring({
         to: { opacity: 1 , translateX : 0},
         from: { opacity: 0.7, translateX: 50 },
-        config: { frequency: 0.6 ,  mass : 1},
+        //config: { frequency: 0.6 ,  mass : 1},
         //reset: true,
         //delay: 500,
       });
 
-      const spin = useSpring({
-        to: { scale : 1.1},
-        from: { rotate3d : 1 },
+      const side2side = useSpring({
+        to: [{ translateX: -10 }, { translateX: 0 },{ translateX: 10 }, { translateX: 0 }],
+        from: { translateX: 0 },
         //reset: true,
         loop: true,
+        config : { mass: 1, tension: 120, friction: 14,frequency: 1 }
       });
 
-      const bottomFade = useSpring({
-        to: {  scale:1 },
-        from: {  scale : 0.8 },
-        delay: 200,
-        loop:false,
-        config : { mass: 2, tension:120, friction: 12, frequency: 1 }
-      });
-
-      const leftFade = useSpring({
-        to: { translateX: 0},
-        from: { translateX : 200 },
-        //delay: 200,
-        //loop:true,
-        config : { mass: 1, tension: 120, friction: 14 }
-      });
+     
 
       const boxMove = useSpring({
         to: [
@@ -154,7 +141,9 @@ function Icon() {
         transform="translate(-154.85 -205.35)"
       ></path>
       <path fill="#e6e6e6" d="M284.09 225.776H460.634V233.829H284.09z"></path>
+      <animated.g style={side2side}>
       <path fill="#5b86e5" d="M284.09 251.776H460.634V259.829H284.09z"></path>
+      </animated.g>
       <path fill="#e6e6e6" d="M284.09 277.776H460.634V285.829H284.09z"></path>
       <path fill="#e6e6e6" d="M670.839 243.346H773.903V251.399H670.839z"></path>
       <path fill="#e6e6e6" d="M670.839 268.346H773.903V276.399H670.839z"></path>
@@ -267,7 +256,7 @@ function Icon() {
       ></path>
       <path fill="#5b86e5" d="M3.535 370.772H143.856V468.283H3.535z"></path>
 
-      <animated.g id="holding-box" style={bottomFade}>
+      <animated.g id="holding-box"  className="animate-pulse">
         <path
           fill="#fff"
           d="M228.545 595.148a29.729 29.729 0 1029.729 29.73 29.816 29.816 0 00-29.73-29.73zm0 8.919a8.919 8.919 0 11-8.92 8.919 8.949 8.949 0 018.92-8.919zm0 42.936a21.657 21.657 0 01-17.838-9.52c.143-5.945 11.892-9.218 17.838-9.218s17.694 3.273 17.837 9.219a21.693 21.693 0 01-17.837 9.519z"
@@ -276,6 +265,7 @@ function Icon() {
       </animated.g>
      
       <path
+      className="animate-pulse"
         fill="#e6e6e6"
         d="M284.187 90.907H460.187V191.90699999999998H284.187z"
       ></path>
@@ -292,11 +282,13 @@ function Icon() {
         d="M846.67 321.051L813.089 314.306 809.187 289.847 799.302 289.084 799.785 320.707 828.962 336.004 846.67 321.051z"
         opacity="0.2"
       ></path>
-      <path
-        fill="#5b86e5"
-        d="M910.162 482.062H1013.226V490.115H910.162z"
-        transform="rotate(-180 884.27 383.413)"
-      ></path>
+      <animated.g style={side2side}>
+        <path
+          fill="#5b86e5"
+          d="M910.162 482.062H1013.226V490.115H910.162z"
+          transform="rotate(-180 884.27 383.413)"
+        ></path>
+      </animated.g>
       <path
         fill="#ffb8b8"
         d="M956.49 494.78l.007-5.322s3.056-11.402-.746-11.407-5.336 10.639-5.336 10.639l3.028 10.649z"

@@ -2,12 +2,14 @@ import Navbar from "../components/navbar";
 import dynamic from "next/dynamic";
 import Spinner from "../components/spinner";
 import Icon from "../components/landing";
-import { MailIcon, RefreshIcon } from "@heroicons/react/solid";
 
 const Footer = dynamic(() => import("../components/footer"), {
   loading: () => <Spinner />,
 });
 const Carousel = dynamic(() => import("../components/carousel"), {
+  loading: () => <Spinner />,
+});
+const Subscription = dynamic(() => import("../components/subscription"), {
   loading: () => <Spinner />,
 });
 import Card from "../components/technologies/card";
@@ -18,7 +20,6 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Example() {
-  const [loading, setLoading] = useState(false);
   return (
     <>
       <Head>
@@ -179,31 +180,10 @@ export default function Example() {
               <CardAlt />
               <CardAlt />
             </div>
-            <Carousel />
           </div>
         </div>
-        <div className="w-full my-5 ">
-          <div className=" text-white  py-5 md:py-16 bg-gradient-to-r from-primary-blue to-primary-green">
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-12  py-10">
-              <div className="text-center md:text-right">
-                <div className="text-3xl">Subscribe to my newsletter</div>
-                <div className="text-grey-400">No spam. Promise.</div>
-              </div>
-              <div className="my-auto">
-                <div className="mb-4 text-center md:text-left">
-                  <input
-                    className="shadow text-primary-blue outline-none appearance-none  focus:ring-2 focus:ring-blue-600 rounded py-3 px-3 "
-                    placeholder="john@example.com"
-                  />
-                  <button className="bg-primary-blue-800 ml-4 p-3  outline-none border-none rounded text-white">
-                    <MailIcon className="w-5 h-5 inline " /> Subscribe
-                    {loading && <Spinner />}
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Subscription />
+        <Carousel />
       </div>
 
       <Footer />
