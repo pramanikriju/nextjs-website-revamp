@@ -15,7 +15,7 @@ export default function Subscription()
       
 
     return (
-        <div className="w-full my-5 ">
+        <div className="w-full mt-10 ">
         <div className=" text-white  py-5 md:py-16 bg-gradient-to-r from-primary-blue to-primary-green">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-12 ">
             <div className="text-center md:text-right">

@@ -60,7 +60,7 @@ export default function Navbar() {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
                   <span className="sr-only">Riju Pramanik</span>
-                  <h1 className="text-4xl font-bold main-text">Riju Pramanik</h1>
+                  <h1 className="text-4xl font-extrabold main-text">Riju Pramanik</h1>
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">

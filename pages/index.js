@@ -12,6 +12,10 @@ const Carousel = dynamic(() => import("../components/carousel"), {
 const Subscription = dynamic(() => import("../components/subscription"), {
   loading: () => <Spinner />,
 });
+const Pricing = dynamic(() => import("../components/pricing"), {
+  loading: () => <Spinner />,
+});
+
 import Card from "../components/technologies/card";
 import CardAlt from "../components/technologies/card-alt";
 import React, { useState } from "react";
@@ -103,13 +107,13 @@ export default function Example() {
                       layout="responsive"
                     />
                   </div>
-                  <div className="filter grayscale hover:grayscale-0 my-auto order-first md:order-2 md:block hidden">
+                  <div className="filter grayscale hover:grayscale-0 my-auto order-first md:order-2 ">
                     <Image
                       className=""
-                      src="/img/tech/nodejs.png"
+                      src="/img/tech/nextjs.svg"
                       alt=""
                       width={4}
-                      height={2.5}
+                      height={2}
                       layout="responsive"
                     />
                   </div>
@@ -183,7 +187,10 @@ export default function Example() {
           </div>
         </div>
         <Subscription />
-        <Carousel />
+        <div className="w-full bg-hero-pattern bg-cover py-16 ">
+          <Pricing />
+        </div>
+        {/* <Carousel /> */}
       </div>
 
       <Footer />

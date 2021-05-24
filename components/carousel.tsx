@@ -25,7 +25,7 @@ const autoplayPlugin = dynamic(
         //     }
         //   },
         // ]}   
-        animationSpeed={1000}
+        //animationSpeed={1000}
       >
           <img src="/img/logo.png" />
           <img src="/img/logo.png" />

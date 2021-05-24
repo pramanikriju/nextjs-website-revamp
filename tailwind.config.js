@@ -31,6 +31,10 @@ module.exports = {
           900: "#0A383C",
         },
       },
+      backgroundImage: (theme) => ({
+        "hero-pattern": "url('/img/cool-background.png')",
+        "footer-texture": "url('/img/bg.svg')",
+      }),
     },
     screens: {
       sm: "640px",
