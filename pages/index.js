@@ -2,6 +2,8 @@ import Navbar from "../components/navbar";
 import dynamic from "next/dynamic";
 import Spinner from "../components/spinner";
 import Icon from "../components/landing";
+import { CalendarIcon, ChevronDoubleDownIcon } from "@heroicons/react/outline";
+import { CogIcon } from "@heroicons/react/solid";
 
 const Footer = dynamic(() => import("../components/footer"), {
   loading: () => <Spinner />,
@@ -18,7 +20,7 @@ const Pricing = dynamic(() => import("../components/pricing"), {
 
 import Card from "../components/technologies/card";
 import CardAlt from "../components/technologies/card-alt";
-import React, { useState } from "react";
+import React from "react";
 import Head from "next/head";
 
 import Image from "next/image";
@@ -57,6 +59,7 @@ export default function Example() {
                     href="#"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-blue-700 hover:bg-primary-blue-900 md:py-4 md:text-lg md:px-10"
                   >
+                    <ChevronDoubleDownIcon className="inline  w-8 h-8 md:animate-bounce " />
                     Get started
                   </a>
                 </div>
@@ -65,6 +68,7 @@ export default function Example() {
                     href="#"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
+                    <CalendarIcon className="inline mr-1 w-8 h-8 " />
                     Book a session
                   </a>
                 </div>
@@ -96,7 +100,7 @@ export default function Example() {
             </p>
             <div className="mt-10  mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-5  lg:px-8 xl:mt-26">
               <div className="text-center">
-                <div className="grid grid-cols-1 md:grid-cols-6 place-content-center gap-5 ">
+                <div className="grid grid-cols-2 md:grid-cols-6 place-content-center gap-5 ">
                   <div className="filter grayscale hover:grayscale-0 my-auto">
                     <Image
                       className=""
@@ -107,7 +111,7 @@ export default function Example() {
                       layout="responsive"
                     />
                   </div>
-                  <div className="filter grayscale hover:grayscale-0 my-auto order-first md:order-2 ">
+                  <div className="filter grayscale hover:grayscale-0 my-auto   ">
                     <Image
                       className=""
                       src="/img/tech/nextjs.svg"
@@ -140,33 +144,27 @@ export default function Example() {
                     </div>
                   </div>
                   <div className="filter grayscale hover:grayscale-0 my-auto">
-                    <div className="inline-flex place-content-center m-auto">
-                      <img
-                        className="flex-1 md:max-h-10 max-h-16"
-                        src="/img/tech/react.svg"
+                    <div className="my-auto">
+                      <Image
+                        className=""
+                        src="/img/tech/react.png"
                         alt=""
+                        width={3.5}
+                        height={1}
+                        layout="responsive"
                       />
-                      <p
-                        style={{ color: "#61dafb" }}
-                        className="text-4xl flex-1 my-auto ml-1"
-                      >
-                        ReactJS
-                      </p>
                     </div>
                   </div>
                   <div className="filter grayscale hover:grayscale-0 my-auto">
-                    <div className="inline-flex place-content-center">
-                      <img
-                        className="flex-1 md:max-h-10 max-h-16"
-                        src="/img/tech/bootstrap.svg"
+                    <div className="my-auto">
+                      <Image
+                        className=""
+                        src="/img/tech/bootstrap.png"
                         alt=""
+                        width={4}
+                        height={1}
+                        layout="responsive"
                       />
-                      <p
-                        style={{ color: "#7952b3" }}
-                        className="text-3xl flex-1 my-auto ml-1"
-                      >
-                        Bootstrap
-                      </p>
                     </div>
                   </div>
                 </div>
