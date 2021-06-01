@@ -2,7 +2,7 @@ import Navbar from "../components/navbar";
 import dynamic from "next/dynamic";
 import Spinner from "../components/spinner";
 import Icon from "../components/landing";
-import { CalendarIcon, ChevronDoubleDownIcon } from "@heroicons/react/outline";
+import { CalendarIcon, ArrowCircleDownIcon } from "@heroicons/react/outline";
 import { CogIcon } from "@heroicons/react/solid";
 
 const Footer = dynamic(() => import("../components/footer"), {
@@ -59,7 +59,7 @@ export default function Example() {
                     href="#"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-blue-700 hover:bg-primary-blue-900 md:py-4 md:text-lg md:px-10"
                   >
-                    <ChevronDoubleDownIcon className="inline  w-8 h-8 md:animate-bounce " />
+                    <ArrowCircleDownIcon className="inline  w-8 h-8  mr-1" />
                     Get started
                   </a>
                 </div>
@@ -75,8 +75,8 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="mt:10 md:-mt-10 mb:16 pb:20">
-            <Icon className="p-32 w-full h-auto" />
+          <div className="">
+            <Icon className=" w-full h-auto" />
           </div>
         </div>
       </main>
