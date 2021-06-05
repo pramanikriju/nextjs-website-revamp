@@ -169,6 +169,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.headline {
+  font-size: clamp(2.1rem, 3vw, 10rem);
+}
 
 /* Animations */
 @-webkit-keyframes bg-scrolling-reverse {
