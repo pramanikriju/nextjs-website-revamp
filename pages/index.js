@@ -185,7 +185,7 @@ export default function Example() {
           </div>
         </div>
         <Subscription />
-        <div className="w-full bg-hero-pattern bg-cover py-16 ">
+        <div className="w-full bg-infinity bg-cover py-16 min-h-screen">
           <Pricing />
         </div>
         {/* <Carousel /> */}

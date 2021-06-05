@@ -3,10 +3,10 @@ export default function Pricing(){
         <section className="bg-none ">
         <div className="container px-5 py-12 mx-auto lg:px-20">
             <div className="flex flex-col flex-wrap pb-6 text-center  ">
-                <h1 className="mb-4 text-4xl font-medium ">
+                <h1 className="mb-4 text-4xl font-bold ">
                     Services and Solutions
                 </h1>
-                <p className="text-base leading-relaxed">
+                <p className="text-base font-medium leading-relaxed">
                     All your technical needs, answered!</p>
             </div>
             <div

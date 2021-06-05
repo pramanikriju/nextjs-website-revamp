@@ -1,6 +1,6 @@
 export default function Footer(){
     return (
-        <div className=" md:bg-gradient-to-r from-gray-100  md:mt-16">
+        <div className=" md:bg-gradient-to-r from-gray-100 ">
             <div className=" py-8 md:py-16 px-16 ">
             <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-8">
                 <div className="text-center md:order-first order-last">
