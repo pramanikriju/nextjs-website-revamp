@@ -8,6 +8,7 @@ export default function CardAlt(){
         <div className="flex-1 px-6 py-4">
           <h4 className="mb-3 text-xl font-semibold tracking-tight text-gray-800">This is the title</h4>
           <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
+          <span className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-indigo-100 bg-indigo-700 rounded">NEW</span>
         </div>
       </div>
     );

@@ -43,7 +43,7 @@ export default function Example() {
                 <div className="block main-font headline leading-tight">
                   Give your business a
                 </div>
-                <div className="block main-text headline leading-tight md:leading-none">
+                <div className="block main-text headline leading-tight ">
                   technology boost
                 </div>
               </h1>
@@ -56,19 +56,22 @@ export default function Example() {
                 <div className="rounded-md shadow">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-blue-700 hover:bg-primary-blue-900 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-blue-700 hover:bg-primary-blue-900 md:py-4 md:text-lg md:px-10"
                   >
-                    <ArrowCircleDownIcon className="inline  w-8 h-8  mr-1" />
-                    Get started
+                    <ArrowCircleDownIcon className="inline animate-bounce  w-8 h-8  mr-1" />
+                    <span className="text-xl	">Learn more</span>
                   </a>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                <div className="mt-3 sm:mt-0 sm:ml-3 relative">
+                  <span class="absolute -top-1 -right-2 animate-ping  inline-flex h-4 w-4  rounded-full bg-primary-blue  "></span>
+                  <span class="absolute -top-1 -right-2  inline-flex rounded-full h-4 w-4  bg-primary-blue "></span>
+
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary-blue-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     <CalendarIcon className="inline mr-1 w-8 h-8 " />
-                    Book a session
+                    <span className="text-xl	">Book a session</span>
                   </a>
                 </div>
               </div>
