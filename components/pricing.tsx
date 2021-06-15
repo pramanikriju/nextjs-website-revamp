@@ -1,244 +1,107 @@
-export default function Pricing(){
-    return (
-        <section className="bg-none ">
-        <div className="container px-5 py-12 mx-auto lg:px-20">
-            <div className="flex flex-col flex-wrap pb-6 text-center  ">
-                <h1 className="mb-4 text-4xl font-bold ">
-                    Services and Solutions
-                </h1>
-                <p className="text-base font-medium leading-relaxed">
-                    All your technical needs, answered!</p>
-            </div>
-            <div
-                className="flex flex-wrap items-end justify-start w-full transition duration-500 ease-in-out transform bg-white border-2 border-gray-600 rounded-lg hover:border-white ">
-                <div className="w-full xl:w-1/4 md:w-1/4">
-                    <div className="relative flex flex-col h-full p-8 ">
-                        <h2 className="mb-4 font-semibold tracking-widest  uppercase title-font">
-                            Sponsorships
-                        </h2>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                    </div>
-                </div>
-                <div className="w-full xl:w-1/4 md:w-1/4">
-                    <div className="relative flex flex-col h-full p-8 ">
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide text-gray-400">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-400 rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path
-                                        d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide text-gray-400">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-400 rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path
-                                        d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </span>Feature.
-                        </p>
-                    </div>
-                </div>
-                <div className="w-full xl:w-1/4 md:w-1/4">
-                    <div className="relative flex flex-col h-full p-8 ">
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide text-gray-400">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-400 rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path
-                                        d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide text-gray-400">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-400 rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path
-                                        d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide text-gray-400">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-400 rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path
-                                        d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </span>Feature.
-                        </p>
-                    </div>
-                </div>
-                <div className="w-full xl:w-1/4 md:w-1/4 lg:ml-auto">
-                    <div className="relative flex flex-col h-full p-8">
-                        <h1 className="flex items-end mx-auto text-3xl font-black leading-none  ">
-                            <span>$50   </span>
-                        </h1>
-                        Per hour
-                        <button
-                            className="w-full px-4 py-2 mx-auto mt-3  transition duration-500 ease-in-out transform border border-gray-900 rounded-lg text-md hover:bg-gray-900 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 focus:border-gray-700 focus:bg-gray-800 ">Buy
-                            Now
-                        </button>
-                        <p className="mx-auto mt-6 text-xs ">Only once within 6 months</p>
-                    </div>
-                </div>
-            </div>
-            <div
-                className="flex flex-wrap items-end justify-start w-full mt-10 transition duration-500 ease-in-out transform bg-white border-2 border-gray-600 rounded-lg hover:border-white ">
-                <div className="w-full xl:w-1/4 md:w-1/4">
-                    <div className="relative flex flex-col h-full p-8 ">
-                        <h2 className="mb-4 font-semibold tracking-widest  uppercase title-font">
-                            Sponsorships
-                        </h2>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                    </div>
-                </div>
-                <div className="w-full xl:w-1/4 md:w-1/4">
-                    <div className="relative flex flex-col h-full p-8 ">
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                    </div>
-                </div>
-                <div className="w-full xl:w-1/4 md:w-1/4">
-                    <div className="relative flex flex-col h-full p-8 ">
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                        <p className="flex items-center mb-2 text-lg font-normal tracking-wide ">
-                            <span
-                                className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2  rounded-full bg-blue-1300">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                    strokeLinejoin="round" strokeWidth="2.5" className="w-4 h-4" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Feature.
-                        </p>
-                    </div>
-                </div>
-                <div className="w-full xl:w-1/4 md:w-1/4 lg:ml-auto">
-                    <div className="relative flex flex-col h-full p-8">
-                        <h1 className="flex items-end mx-auto text-3xl font-black leading-none  ">
-                            <span>$50 </span>
-                        </h1>
-                        <button
-                            className="w-full px-4 py-2 mx-auto mt-3 text-blue-100 transition duration-500 ease-in-out transform bg-blue-600 border-blue-600 rounded-md items-centerw-full text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blue-800 ">Buy
-                            Now
-                        </button>
-                        <p className="mx-auto mt-6 text-xs ">Only once within 6 months</p>
-                    </div>
-                </div>
-            </div>
+export default function Pricing() {
+  return (
+    <section className="bg-none ">
+      <div className="container px-5 py-12 mx-auto lg:px-20">
+        <div className="flex flex-col flex-wrap pb-6 text-center  ">
+          <h1 className="mb-4 text-4xl font-bold ">Services and Solutions</h1>
+          <p className="text-xl font-medium leading-relaxed">
+            All your technical needs, answered!
+          </p>
         </div>
-      
+        <div className="grid md:grid-cols-2 gap-4 grid-cols-1">
+          <div>
+            <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20 border-2">
+              <div className="flex justify-center md:justify-end -mt-16">
+                <img
+                  className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                  src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                />
+              </div>
+              <div>
+                <h2 className="text-gray-800 text-3xl font-semibold text-center md:text-left">
+                  Web Apps
+                </h2>
+                <p className="mt-2 text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  dolores deserunt ea doloremque natus error, rerum quas odio
+                  quaerat nam ex commodi hic, suscipit in a veritatis pariatur
+                  minus consequuntur!
+                </p>
+              </div>
+              <div className="flex justify-end mt-4">
+                <a href="#" className="text-xl font-medium text-indigo-500">
+                  John Doe
+                </a>
+              </div>
+            </div>
+            <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg mt-20  border-2">
+              <div className="flex justify-center md:justify-end -mt-16">
+                <img
+                  className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                  src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                />
+              </div>
+              <div>
+                <h2 className="text-gray-800 text-3xl font-semibold">
+                  Digital Presence
+                </h2>
+                <p className="mt-2 text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  dolores deserunt ea doloremque natus error, rerum quas odio
+                  quaerat nam ex commodi hic, suscipit in a veritatis pariatur
+                  minus consequuntur!
+                </p>
+              </div>
+              <div className="flex justify-end mt-4">
+                <a href="#" className="text-xl font-medium text-indigo-500">
+                  John Doe
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="max-w-full py-4 px-8 bg-white shadow-lg rounded-lg my-20 border-2">
+              <div className="flex justify-center md:justify-end -mt-16">
+                <img
+                  className="w-20 h-20 object-cover rounded-full border-2 border-primary-blue"
+                  src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                />
+              </div>
+              <div>
+                <h2 className="text-gray-800 text-3xl font-semibold text-center md:text-left">
+                  Technical Lead
+                </h2>
+                <p className="mt-2 text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  dolores deserunt ea doloremque natus error, rerum quas odio
+                  quaerat nam ex commodi hic, suscipit in a veritatis pariatur
+                  minus consequuntur!
+                </p>
+                <br />
+                <p className="text-xl font-medium leading-relaxed">
+                  What do you get?
+                </p>
+                <p>
+                  <ul className="list-disc list-inside">
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    </li>
+                    <li>
+                      Suscipit in a veritatis pariatur minus consequuntur!
+                    </li>
+                    <li>veritatis pariatur minus consequuntur!</li>
+                  </ul>
+                </p>
+              </div>
+              <div className="flex justify-end mt-4">
+                <a href="#" className="text-xl font-medium text-indigo-500">
+                  John Doe
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    );
+  );
 }
