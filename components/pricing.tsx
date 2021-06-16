@@ -10,7 +10,7 @@ export default function Pricing() {
         </div>
         <div className="grid md:grid-cols-2 gap-4 grid-cols-1">
           <div>
-            <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20 border-2">
+            <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20 border-2 hover:border-primary-blue">
               <div className="flex justify-center md:justify-end -mt-16">
                 <img
                   className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
@@ -34,7 +34,7 @@ export default function Pricing() {
                 </a>
               </div>
             </div>
-            <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg mt-20  border-2">
+            <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg mt-20  border-2 hover:border-primary-blue">
               <div className="flex justify-center md:justify-end -mt-16">
                 <img
                   className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
@@ -60,7 +60,7 @@ export default function Pricing() {
             </div>
           </div>
           <div>
-            <div className="max-w-full py-4 px-8 bg-white shadow-lg rounded-lg my-20 border-2">
+            <div className="max-w-full py-4 px-8 bg-white shadow-lg rounded-lg my-20 border-2 hover:border-primary-blue">
               <div className="flex justify-center md:justify-end -mt-16">
                 <img
                   className="w-20 h-20 object-cover rounded-full border-2 border-primary-blue"

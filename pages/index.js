@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import Spinner from "../components/spinner";
 import Icon from "../components/landing";
 import { CalendarIcon, ArrowCircleDownIcon } from "@heroicons/react/outline";
-import { CogIcon } from "@heroicons/react/solid";
 
 const Footer = dynamic(() => import("../components/footer"), {
   loading: () => <Spinner />,
@@ -17,6 +16,14 @@ const Subscription = dynamic(() => import("../components/subscription"), {
 const Pricing = dynamic(() => import("../components/pricing"), {
   loading: () => <Spinner />,
 });
+
+import me from "../public/img/profile.jpg";
+import laravel from "../public/img/tech/laravel.png";
+import nextjs from "../public/img/tech/nextjs.svg";
+import wordpress from "../public/img/tech/wordpress.png";
+import tailwind from "../public/img/tech/tailwind.svg";
+import react from "../public/img/tech/react.png";
+import bootstrap from "../public/img/tech/bootstrap.png";
 
 import Card from "../components/technologies/card";
 import CardAlt from "../components/technologies/card-alt";
@@ -88,10 +95,11 @@ export default function Example() {
             <div className="block max-w-48 md:w-48 md:h-48 rounded-full  mx-auto md:-mt-24 w-48 h-48 -mt-24 border-4 border-primary-blue">
               <Image
                 className="block max-w-48 md:w-48 md:h-48 rounded-full mx-auto md:-mt-24 w-32 h-32 -mt-16 "
-                src="/img/profile.jpg"
+                src={me}
                 width={48}
                 height={48}
                 layout="responsive"
+                placeholder="blur"
                 priority={true}
               />
             </div>
@@ -106,42 +114,34 @@ export default function Example() {
                   <div className="filter grayscale hover:grayscale-0 my-auto">
                     <Image
                       className=""
-                      src="/img/tech/laravel.png"
-                      alt=""
-                      width={17}
-                      height={5}
-                      layout="responsive"
+                      src={laravel}
+                      alt="Laravel Logo"
+                      placeholder="blur"
                     />
                   </div>
                   <div className="filter grayscale hover:grayscale-0 my-auto   ">
                     <Image
                       className=""
-                      src="/img/tech/nextjs.svg"
-                      alt=""
-                      width={4}
-                      height={2}
-                      layout="responsive"
+                      src={nextjs}
+                      alt="NextJS Logo"
+                      // placeholder="blur"
                     />
                   </div>
                   <div className="filter grayscale hover:grayscale-0 my-auto">
                     <Image
                       className=""
-                      src="/img/tech/wordpress.png"
-                      alt=""
-                      width={4.4}
-                      height={1}
-                      layout="responsive"
+                      src={wordpress}
+                      alt="Wordpress logo"
+                      placeholder="blur"
                     />
                   </div>
                   <div className="filter grayscale hover:grayscale-0 my-auto">
                     <div className="my-auto">
                       <Image
                         className=""
-                        src="/img/tech/tailwind.svg"
-                        alt=""
-                        width={3}
-                        height={1}
-                        layout="responsive"
+                        src={tailwind}
+                        alt="Tailwind Logo"
+                        // placeholder="blur"
                       />
                     </div>
                   </div>
@@ -149,11 +149,9 @@ export default function Example() {
                     <div className="my-auto">
                       <Image
                         className=""
-                        src="/img/tech/react.png"
-                        alt=""
-                        width={3.5}
-                        height={1}
-                        layout="responsive"
+                        src={react}
+                        alt="React logo"
+                        placeholder="blur"
                       />
                     </div>
                   </div>
@@ -161,11 +159,9 @@ export default function Example() {
                     <div className="my-auto">
                       <Image
                         className=""
-                        src="/img/tech/bootstrap.png"
-                        alt=""
-                        width={4}
-                        height={1}
-                        layout="responsive"
+                        src={bootstrap}
+                        alt="Bootstrap logo"
+                        placeholder="blur"
                       />
                     </div>
                   </div>
